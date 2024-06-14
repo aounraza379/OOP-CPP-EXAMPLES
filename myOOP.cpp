@@ -90,8 +90,21 @@ using namespace std;
 // OUTPUT() to show details.KEEP RUNNING PROGRAM UNTIL USER PRESSING Y/y.
 
 // SOLUTION 3
-// class player
-
+ // class Player {
+ // 	string pname;
+ // 	int pavg;
+ // 	string pteam;
+ // 	public:
+ // 		int input() {
+ 			
+	// 	}
+	// 	int output() {
+			
+	// 	}
+ // };
+ // int main() {
+ 	
+ // }
 
 
 
