@@ -170,3 +170,119 @@ using namespace std;
 //	}
 //	return 0;
 // }
+
+// QUESTION 5
+// DECLARE A CLASS Array THAT CONTAINS ARRAY OF 5 NUMBERS AND FOLLOWING MEMBER FUMCTIONS: 
+// input() to take 5 input from user, display() to display them, max() to show max number in array
+// and min() to show minimum number in array.
+
+// SOLUTION 5
+// class Array {
+// 	private:
+// 		int marks[5];
+// 	public:
+//	 void input();
+// 	 void display();
+// 	 void min();
+// 	 void max();
+// };
+// void Array :: input() {
+// 	cout << "Enter Five Integers: " << endl;
+// 	for( int i=0; i<5; i++ ) {
+// 		cin >> marks[i];
+//	}
+// }
+// void Array :: display() {
+// 	cout << "Five Numbers are: " << endl;
+// 	for( int i=0; i<5; i++ ) {
+// 		cout << marks[i] << endl;
+//	}
+// }
+// void Array :: min() {
+// 	int min = marks[0];
+// 	for( int i=0; i<5; i++ ) {
+// 		if( min > marks[i] ) {
+// 			min = marks[i];
+//		}
+//	}
+//	cout << "The Minimum Number from Array is " << min << endl;
+// }
+// void Array :: max() {
+// 	int max = marks[0];
+// 	for( int i=0; i<5; i++ ) {
+// 		if( max < marks[i] ) {
+// 			max = marks[i];
+//		}
+//	}
+//	cout << "The Maximum Number from Array is " << max;
+// }
+// int main() {
+// 	Array a;
+// 	a.input();
+// 	a.display();
+// 	a.min();
+// 	a.max();
+//	return 0;
+// }
+
+// QUESTION 6
+// DEMONSTRATES TWO CLASSES, Employee AND Programmer, WHERE Programmer INHERITS FROM Employee.
+// AND HAS A proteced INTEGER Salary. INCLUDES A Public METHOD void setSalary() TO SET THE SALARY
+// AND int getSalary() TO RETRIEVE THE SALARY AND PRINT THEM IN main().
+
+// SOLUTION 6
+// class Employee{
+//	protected:
+//		int salary;
+//	public:
+// 	void setSalary( int s ) {
+// 		salary = s;
+//	}
+//	int getSalary() {
+//		return salary;
+//	}
+// };
+// class Programmer : public Employee {
+// };
+// int main() {
+// 	Programmer obj;
+// 	obj.setSalary(50000);
+// 	cout << "The salary of employee is " << obj.getSalary();
+// 	return 0;
+// }
+
+// QUESTION 7
+// Create a base class Person with derived class Student. The Person class should have name 
+// and age as data members.The Student class should inherit from Person and have an additional 
+// data member roll_number and a function display() to show all details.
+
+// SOLUTION 7
+// class Person{
+// 	private: 
+//    	string name;
+//    	int age;
+// 	public:
+//    Person( string n, int a ) {
+//    	name = n;
+//    	age = a;
+//    }
+//    void display1() {
+//    	cout << "The name of student is " << name << endl;
+//        cout << "The age of student is " << age << endl;
+//	}
+// };
+// class Student : public Person {
+// private:
+//    int roll_number;
+// public:
+//    Student(string n, int a, int roll) : Person(n, a), roll_number(roll) { 
+//	}
+//    void display2() {
+//        display1();
+//        cout << "The roll number of student is " << roll_number << endl;
+//    }   
+// };
+// int main() {
+//   Student s1("Aoun", 20, 18);
+//   s1.display2();
+// }
